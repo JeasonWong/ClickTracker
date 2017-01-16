@@ -76,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override public void onClick(View v) {
-      mOriginalListener.onClick(v);
+      if (mOriginalListener != null) {
+        mOriginalListener.onClick(v);
+      }
       StringBuilder sb = new StringBuilder();
       sb.append("hook succeed.\n");
       Object obj = v.getTag(R.id.id_hook);

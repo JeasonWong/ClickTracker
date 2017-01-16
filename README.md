@@ -24,7 +24,7 @@ public void onClick(View view) {
 ```
 If you want to track some data about this click event, you can new a map and put some data in it, at last call setTag().
 
-#### step2. customize HookListener
+#### step2. Customize HookListener
 
 ```java
 public static class HookListener implements View.OnClickListener {

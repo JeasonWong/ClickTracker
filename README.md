@@ -24,7 +24,7 @@ public void onClick(View view) {
 ```
 If you want to track some data about this click event, you can new a map and put some data in it, at last call setTag().
 
-#### step2. Customize HookListener
+#### step2. customize HookListener
 
 ```java
 public static class HookListener implements View.OnClickListener {
@@ -40,7 +40,7 @@ public static class HookListener implements View.OnClickListener {
       StringBuilder sb = new StringBuilder();
       sb.append("hook succeed.\n");
       Object obj = v.getTag(R.id.id_hook);
-      if (obj != null && obj instanceof HashMap && !((Map) obj).isEmpty()) {
+      if (obj instanceof HashMap && !((Map) obj).isEmpty()) {
         for (Map.Entry<String, String> entry : ((Map<String, String>) obj).entrySet()) {
           sb.append("key => ")
               .append(entry.getKey())

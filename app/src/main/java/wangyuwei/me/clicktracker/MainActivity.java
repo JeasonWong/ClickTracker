@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
       StringBuilder sb = new StringBuilder();
       sb.append("hook succeed.\n");
       Object obj = v.getTag(R.id.id_hook);
-      if (obj != null && obj instanceof HashMap && !((Map) obj).isEmpty()) {
+      if (obj instanceof HashMap && !((Map) obj).isEmpty()) {
         for (Map.Entry<String, String> entry : ((Map<String, String>) obj).entrySet()) {
           sb.append("key => ")
               .append(entry.getKey())
